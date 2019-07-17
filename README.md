@@ -1,44 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>1 часть.</h2>
+<ul>
+<li>Необходимо создать несколько страниц и реализовать навигацию между ними.</li>
+<li>На данных страницах опубликовать разное содержимое используя типовые элементы библиотеки компонентов.</li>
+<li>Добавить защищенную страницу, доступ к которой может быть только у авторизованных пользователей. Авторизация возможна только с фейковыми учетными данными: Логин: demo123 Пароль: 112</li>
+<li>Реализовать вход и выход из учетной записи (для реализации доступа к защищенной странице).</li>
+</ul>
+<h2>2 часть.</h2>
+<ul>
+<li>На добавленной странице добавить таблицу, используя компонент React-table https://github.com/tannerlinsley/react-table с произвольной информацией, но с несколькими колонками.</li>
+<li>Добавить у данной таблицы фильтр значений у каждого столбца, для осуществления фильтрации элементов данной таблицы.</li>
+<li>Добавить в таблицу возможность сортировки данных.</li>
+<li>Добавить в таблицу возможность группировки данных по какому-либо признаку или значению.</li>
+<li>Добавить в таблицу на данные одного из столбцов, ссылки на элементы (сделать кликабельными).</li>
+<li>Добавить страницу, которая будет открываться только при клике на ссылку элемента таблицы.</li>
+<li>На добавленной странице, расположить несколько стандартных вкладок из библиотеки компонентов, а также несколько текстовых полей в которых отобразить переданные данные при клике из таблицы.</li>
+<li>Предусмотреть возможность закрытия страницы и возвращения на страницу с таблицей, по клику на кнопке, например. Суть в следующем, нужно чтобы при клике на любом элементе таблицы, открывалась новая страница отображающая данные элемента таблицы, который кликнули</li>
+</ul>  
+<h2>3 часть</h2>
+<ul>
+<li>Добавить к проекту, выполненному на предыдущей практической части следующий функционал.</li>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<li>На странице с таблицей создать несколько кнопок выполняющих стандартные операции: добавить, редактировать, удалить.</li>
+<li>Необходимо добавить страницу на которой будут осуществляться операции чтения данных элемента таблицы, редактирование. При чтении данные должны быть не доступны для изменения.</li>
+<li>При процедуре добавления и редактирования данных, кнопка сохранения должна становиться активной только после внесения данных (изменения данных). А так же одно из полей таблицы должно содержать только цифры и предупреждать об этом если там будут буквы или буквы и цифры, в случае неправильного ввода.</li>
+<li>Используя библиотеку компонентов, реализовать подтверждающий диалог удаления элемента таблицы. «Действительно удалить элемент (имя)?».</li>
+<li>Работа с данными должна производиться с использованием базы данных MongoDB. Реализовать функционал, при котором можно свободно добавить новые данные в таблицу, редактировать и удалять их.</li>
+<li>В таблице данные должны содержать дату и время, определив для этого дополнительный столбец «Дата и время».
+данные для таблицы должны загружаться при заходе на страницу.</li>
+</ul>
