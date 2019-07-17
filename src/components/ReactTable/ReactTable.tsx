@@ -7,13 +7,35 @@ const namor = require('namor');
 
 const newPerson = () => {
     const statusChance = Math.random();
-    const url = namor.generate({ words: 1, numbers: 0 });
-    const firstName = <Link to={{pathname: `/data-for-table/${url}`}} >{url}</Link>
+    const url_firstname = namor.generate({ words: 1, numbers: 0 });
+    const url_lastName = namor.generate({ words: 1, numbers: 0 });
+    const url_age = Math.floor(Math.random() * 30);
+
+    const stateLocation = {
+        url_firstname: url_firstname, 
+        url_lastName: url_lastName,
+        url_age: url_age
+    }
+
+    const firstName = <Link to={{ 
+        pathname: `/data-for-table`,
+        state: stateLocation
+    }} >{url_firstname}</Link>;
+
+    const lastName = <Link to={{ 
+        pathname: `/data-for-table`,
+        state: stateLocation
+    }} >{url_lastName}</Link>;
+
+    const age = <Link to={{ 
+        pathname: `/data-for-table`,
+        state: stateLocation
+    }} >{url_age}</Link>;
     
     return {
         firstName: firstName,
-        lastName: namor.generate({ words: 1, numbers: 0 }),
-        age: Math.floor(Math.random() * 30),
+        lastName: lastName,
+        age: age,
         visits: Math.floor(Math.random() * 100),
         progress: Math.floor(Math.random() * 100),
         status:

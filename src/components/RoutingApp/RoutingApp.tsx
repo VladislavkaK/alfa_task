@@ -20,7 +20,7 @@ const RoutingApp = (props: any) => {
           <Route path="/buttons" component={Buttons} />
           <Route path="/checkboxes" component={Checkboxes} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
-          <PrivateRoute path="/data-for-table/:data" component={PageForTable} />
+          <PrivateRoute path="/data-for-table" component={PageForTable} />
           <Route component={NotFound} />
       </Switch>
   )

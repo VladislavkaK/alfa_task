@@ -57,14 +57,19 @@ const PageForTable = (props: any) => {
             {(currentLink === "" || currentLink === "Данные из таблицы") && (
                 <div className='row'>
                         <Input
-                            placeholder='Поле 1'
+                            placeholder='firstname'
                             size='l'
-                            value={props.match.params.data}
+                            value={props.location.state.url_firstname}
                         />
                         <Input
-                            placeholder='Поле 2'
+                            placeholder='lastname'
                             size='l'
-                            value={props.match.params.data}
+                            value={props.location.state.url_lastName}
+                        />
+                        <Input
+                            placeholder='age'
+                            size='l'
+                            value={props.location.state.url_age.toString()}
                         />
                 </div>
             )}
