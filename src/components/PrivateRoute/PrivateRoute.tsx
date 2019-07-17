@@ -37,7 +37,7 @@ const PrivateRoute = ({ component: Component, ...rest }: any): any => {
 
 const mapStateToProps = (state: any) => {
     return {
-        isAuth: state.logout.isAuth,
+        isAuth: state.login.isAuth,
     }
 }
 

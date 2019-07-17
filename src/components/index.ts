@@ -5,6 +5,10 @@ import NotFound from './NotFound';
 import RoutingApp from './RoutingApp';
 import Home from './Home';
 import PrivateRoute from './PrivateRoute';
+import ReactTable from './ReactTable';
+import PageForTable from './PageForTable';
+import ProgressBar from './ProgressBar';
+import Radio from './Radio';
 
 export {
     Checkboxes,
@@ -13,5 +17,9 @@ export {
     NotFound,
     RoutingApp,
     Home,
-    PrivateRoute
+    PrivateRoute,
+    ReactTable,
+    PageForTable,
+    ProgressBar,
+    Radio
 }

@@ -5,7 +5,8 @@ import {
     LogIn,
     Buttons,
     Checkboxes,
-    PrivateRoute
+    PrivateRoute,
+    PageForTable,
 } from '../../components';
 import Home from '../../components/Home';
 import { Dashboard } from '../../containers';
@@ -19,6 +20,7 @@ const RoutingApp = (props: any) => {
           <Route path="/buttons" component={Buttons} />
           <Route path="/checkboxes" component={Checkboxes} />
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          <PrivateRoute path="/data-for-table/:data" component={PageForTable} />
           <Route component={NotFound} />
       </Switch>
   )
