@@ -19,7 +19,7 @@
     "@types/redux": "^3.6.0",
     "@types/redux-saga": "^0.10.5",
     "arui-feather": "^13.13.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "connect": "^3.7.0",
     "emotion-theming": "^10.0.14",
     "eslint-plugin-import": "^2.18.0",
